@@ -40,7 +40,6 @@ const errorHandler = {
         terminateHttpServerAndExit();
       }
     } catch (handlingError) {
-      // No logger here since it might have failed
       process.stdout.write(
         'The error handler failed. Here are the handler failure and then the origin error that it tried to handle: '
       );
